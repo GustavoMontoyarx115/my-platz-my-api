@@ -16,6 +16,6 @@ export default new DataSource({
   migrations: ['dist/database/migration/*.js'],
 
   synchronize: false,     // 🔒 jamás true en prod
-  migrationsRun: true,    // ✅ se ejecutan una sola vez
+  migrationsRun: false,    // ✅ se ejecutan una sola vez
   logging: false,
 });
